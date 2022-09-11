@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dz</title>
+    <style>
+      body {
+        background-image: url(./未标题-1.png);
+      }
+    </style>
+  </head>
+  <body
+    style="
+      display: flex;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    "
+  >
+    <div
+      style="
+        font-size: 3vh;
+        margin: 10vh;
+        background-color: black;
+        padding: 2vh;
+        color: aliceblue;
+        cursor: pointer;
+        border-radius: 2vh;
+      "
+    >
+      老周啊,我钱全部都花掉了怎么办
+    </div>
+    <div
+      onclick="dz()"
+      id="dzs"
+      style="
+        width: 10vh;
+        height: 10vh;
+        background-color: rgb(255, 183, 183);
+        font-size: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2vh;
+        cursor: pointer;
+      "
+    >
+      0
+    </div>
+    <script>
+      function dz() {
+        let dzsbq = window.document.getElementById("dzs");
+        let dzs = parseInt(dzsbq.innerText);
+        let jia = dzs + 1;
+        dzsbq.innerText = jia;
+      }
+    </script>
+  </body>
+</html>
